@@ -1,0 +1,5 @@
+# Ignore unnecessary temporary files
+*~
+*.swp
+*.bak
+*.log
