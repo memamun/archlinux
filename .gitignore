@@ -4,3 +4,66 @@
 *.bak
 *.log
 gh/
+# Ignore compiled, temporary, and cache files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.lock
+
+# Ignore system-specific files
+.DS_Store
+*.directory
+*~ 
+
+# Ignore Alacritty backup and cache files
+alacritty/*cache*
+
+# Ignore custom scripts bytecode and logs
+custom_scripts/*.pyc
+custom_scripts/*.log
+
+# Ignore browser and application caches
+BraveSoftware/
+
+# Ignore VSCode workspace settings and cache
+Code/
+
+# Ignore GTK settings cache
+gtk-3.0/
+# Ignore fish history
+fish/fish_history
+
+neofetch/
+
+# Ignore PulseAudio runtime files
+pulse/
+# Ignoe Polybar logs
+polybar/logs/
+
+# Ignore Rofi history and cache
+rofi/.cache
+
+# Ignore Xfce-related temp files
+xfce4/
+
+# Ignore Obsidian workspace settings
+obsidian/
+
+# Ignore Go build artifacts
+go/
+
+# Ignore Yay cache
+yay/
+
+# Ignore miscellaneous temporary files
+systemd/
+walls/*.tmp
+
+dconf/
+uv/
+mimeapps.list
+Thunar/
+dconf/
+
