@@ -1,0 +1,10 @@
+2025/03/20-05:54:24.180 10d1b Reusing MANIFEST /home/mamun/.config/notion-app/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2025/03/20-05:54:24.180 10d1b Recovering log #3
+2025/03/20-05:54:24.188 10d1b Level-0 table #3: started
+2025/03/20-05:54:24.197 10d1b Level-0 table #3: 306609 bytes OK
+2025/03/20-05:54:24.197 10d1b Recovering log #4
+2025/03/20-05:54:24.197 10d1b Reusing old log /home/mamun/.config/notion-app/Partitions/notion/Local Storage/leveldb/000004.log 
+2025/03/20-05:54:24.200 10d1b Delete type=2 #5
+2025/03/20-05:54:24.200 10d1b Delete type=0 #3
+2025/03/20-05:54:38.535 10d27 Level-0 table #6: started
+2025/03/20-05:54:38.552 10d27 Level-0 table #6: 306655 bytes OK

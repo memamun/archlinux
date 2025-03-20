@@ -1,0 +1,17 @@
+hwdec=nvidia
+video-sync=display-resample
+interpolation=yes
+tone-mapping=hdr
+framerate=60
+
+sub-auto=all
+sub-font-size=32
+sub-margin-x=10
+sub-margin-y=10
+
+audio-quality=1
+volume=100
+
+p playpause
+f fullscreen
+q quit

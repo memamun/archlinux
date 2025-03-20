@@ -11,6 +11,9 @@
 
 for_window [class="^.*"] border pixel 0 
 
+# Make GTK file picker fullscreen or control size
+for_window [class="Navigator" title="Oversized GTK file picker — Mozilla Firefox"] fullscreen enable
+
 set $mod Mod4
 # set $mod Mod1
 
@@ -78,7 +81,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec kitty
 bindsym $mod+T exec --no-startup-id ghostty
-
+bindsym $mod+Shift+T exec xfce4-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -119,13 +122,20 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+y layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+#Open Thunar File Manager
+# In your i3 config file (~/.config/i3/config)
+bindsym $mod+e exec thunar
+
+#FireFox Launch
+bindsym $mod+q exec firefox
 
 # focus the child container
 #bindsym $mod+d focus child
