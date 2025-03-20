@@ -29,17 +29,35 @@ exec --no-startup-id /usr/lib/lxqt-policykit/lxqt-policykit-agent &
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
-bindsym $mod+b exec ~/.config/polybar/toggle_polybar.sh
+
+bindsym Print exec maim -u -m 10 "/home/$USER/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
+bindsym $mod+Print exec maim -u -m 10 --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
+bindsym Shift+Print exec maim -u -m 10 --select "/home/$USER/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
+
+bindsym $mod+Shift+s exec maim -u -m 10 --select | xclip -selection clipboard -t image/png
 
 
-bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
-bindsym $mod+Print exec maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).jpg"
-bindsym Shift+Print exec maim --select "/home/$USER/Pictures/$(date).jpg"
+#bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
+#bindsym $mod+Print exec maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).jpg"
+#bindsym Shift+Print exec maim --select "/home/$USER/Pictures/$(date).jpg"
 
 ## Clipboard Screenshots
-bindsym Ctrl+Print exec maim | xclip -selection clipboard -t image/png
-bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
-bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipboard -t image/png
+#bindsym Ctrl+Print exec maim | xclip -selection clipboard -t image/png
+#bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+#bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipboard -t image/png
+
+## Flameshot Screenshots
+
+# Fullscreen screenshot (Print)
+#bindsym Ctrl+Print exec flameshot full -p ~/Pictures/screenshots
+
+# Window screenshot ($mod + Print)
+#bindsym $mod+Shift+Print exec flameshot window -p ~/Pictures/screenshots
+
+# Custom area screenshot ($mod + Shift + S)
+bindsym $mod+Shift+Print exec flameshot gui -p ~/Pictures/screenshots
+
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.

@@ -4,7 +4,7 @@ advance_on_delete=TRUE
 show_numbers_in_pl=TRUE
 
 [audgui]
-filesel_path=/run
+filesel_path=/home/mamun
 
 [audqt]
 icon_theme=audacious-flat-dark
@@ -47,7 +47,10 @@ show_remaining_time=TRUE
 
 [skins]
 player_shaded=TRUE
+player_x=1091
+player_y=719
 skin=/usr/share/audacious/Skins/Default
+twoway_scroll=TRUE
 
 [skins-layout]
 albumart-qt=543,346,288,192
