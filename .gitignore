@@ -70,3 +70,7 @@ vivaldi/
 google-chrome/
 google-chrome-for-testing/
 BraveSoftware
+/Docker Desktop/
+Docker Desktop/
+.env.secret
+README.md
