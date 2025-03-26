@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1742329022332571-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>XFCE Terminal</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>omnishell</icon>
+	<name>Open in ranger</name>
+	<submenu></submenu>
+	<unique-id>1742426326161543-1</unique-id>
+	<command>xfce4-terminal --hold --command=&quot;ranger %d&quot;
+</command>
+	<description>Terminal based File manager</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
